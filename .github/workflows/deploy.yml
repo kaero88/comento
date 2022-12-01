@@ -53,7 +53,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.ECS_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.ECS_AWS_SEC_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.ECS_AWS_SEC_KEY_ID }}
           aws-region: ap-northeast-2
 
       - name: Deploy Amazon ECS task definition
